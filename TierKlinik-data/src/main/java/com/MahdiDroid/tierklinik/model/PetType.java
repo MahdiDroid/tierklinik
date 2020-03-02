@@ -1,4 +1,4 @@
-package com.mahdidroid.tierklinik.model;
+package com.MahdiDroid.tierklinik.model;
 
 public class PetType {
 

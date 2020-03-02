@@ -1,4 +1,4 @@
-package com.mahdidroid.tierklinik;
+package com.MahdiDroid.tierklinik;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
