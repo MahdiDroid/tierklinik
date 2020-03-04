@@ -3,10 +3,11 @@ package com.MahdiDroid.tierklinik.services.map;
 import com.MahdiDroid.tierklinik.model.Pet;
 import com.MahdiDroid.tierklinik.model.Vet;
 import com.MahdiDroid.tierklinik.services.CrudService;
+import com.MahdiDroid.tierklinik.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements CrudService<Vet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();

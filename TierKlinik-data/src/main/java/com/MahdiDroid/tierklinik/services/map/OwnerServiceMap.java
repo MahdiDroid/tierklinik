@@ -2,11 +2,12 @@ package com.MahdiDroid.tierklinik.services.map;
 
 import com.MahdiDroid.tierklinik.model.Owner;
 import com.MahdiDroid.tierklinik.services.CrudService;
+import com.MahdiDroid.tierklinik.services.OwnerService;
 import com.sun.xml.bind.v2.model.core.ID;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -30,5 +31,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements C
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
