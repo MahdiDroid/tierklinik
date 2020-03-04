@@ -4,9 +4,12 @@ import com.MahdiDroid.tierklinik.model.Pet;
 import com.MahdiDroid.tierklinik.model.Vet;
 import com.MahdiDroid.tierklinik.services.CrudService;
 import com.MahdiDroid.tierklinik.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
     @Override
     public Set<Vet> findAll() {

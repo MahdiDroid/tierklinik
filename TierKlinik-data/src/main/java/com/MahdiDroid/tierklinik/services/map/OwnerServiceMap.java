@@ -4,9 +4,11 @@ import com.MahdiDroid.tierklinik.model.Owner;
 import com.MahdiDroid.tierklinik.services.CrudService;
 import com.MahdiDroid.tierklinik.services.OwnerService;
 import com.sun.xml.bind.v2.model.core.ID;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
