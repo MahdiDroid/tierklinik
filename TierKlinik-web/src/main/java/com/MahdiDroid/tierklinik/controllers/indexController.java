@@ -10,7 +10,7 @@ public class indexController {
                         //empty string    slash    mehtod  open the html file
     @RequestMapping({"","/","index","index.html"})
     public String index(Model model){
-        model.addAttribute("test","my name is mehdi");
+        model.addAttribute("welcome","welcome to our clinic");
         return "index";
     }
 }
