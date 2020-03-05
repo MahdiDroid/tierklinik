@@ -13,4 +13,9 @@ public class indexController {
         model.addAttribute("welcome","welcome to our clinic");
         return "index";
     }
+
+    @RequestMapping("/oups")
+    public String error(){
+        return "error";
+    }
 }
